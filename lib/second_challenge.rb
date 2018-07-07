@@ -7,12 +7,13 @@ def second_challenge
   }
 
   #code your solution here!
-  array = []
-  groceries.each do |category, data|
-  # puts "#{category}: #{data}"
-    data.each do |attribute, value|
-        array.push("#{attribute}")
-    end
-  end
-  array
+  # array = []
+  # groceries.each do |category, data|
+  # # puts "#{category}: #{data}"
+  #   data.each do |attribute, value|
+  #       array.push("#{attribute}")
+  #   end
+  # end
+  # array
+  groceries.values.flatten
 end
